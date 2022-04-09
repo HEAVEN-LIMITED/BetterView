@@ -195,7 +195,7 @@ font-size:13px;
 color:#f00;
 }
 #login_pad_input {
-/* background:url(../img/inputedit_bk.png) no-repeat 0 center; */
+background:url(../img/inputedit_bk.png) no-repeat 0 center;
 margin:6px auto;
 width:282px;
 height:74px;
@@ -288,6 +288,7 @@ background:url(../img/more.png) no-repeat center 18px;
 background:url(../img/showpwd.png) no-repeat center 16px;
 }
 #login_pad_bottom {
+color:#000;
 overflow:hidden;
 margin:3px auto;
 width:272px;
@@ -298,6 +299,7 @@ margin-left:-200px;
 float:left;
 }
 #login_pad_bottom  label {
+display:block;
 padding-left:22px;
 height:19px;
 line-height:20px;
@@ -331,15 +333,18 @@ margin:1px 2px 0 0;
     margin:10px auto;
 }
 
-
 #login_pad_done {
-/*background:url(../img/login.png) no-repeat 0 center; */
+display:block;
+background:url(../img/login.png) no-repeat 0 center;
 width:290px;
 height:45px;
+color:Green;
 font-size:14px;
+font-weight:700;
+border:none;
+line-height:45px;
 text-align:center;
 }
-
 
 #SpeedUp {
     display:block;
@@ -361,10 +366,15 @@ background-position: -580px center;
 }
 
 #loginout_pad_done {
+    display:block;
+    background:url(../img/login.png) no-repeat 0 center;
     width:290px;
     height:45px;
     margin:5px 0 0 15px;
+    color:#de8262;
     font-size:14px;
+    font-weight:700;
+    border:none;
 }
 #login_pad_done:hover {
 background-position: -290px center;

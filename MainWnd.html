@@ -2,12 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="cwefeatures" content="status:hide,size:330 559,margin:6,bgimg:img/main.png"/>
     <title>校园客户端</title>
     <link href="css/comm.css" rel="stylesheet" type="text/css"/>
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/cwe-core.js"></script>
     <script type="text/javascript" src="js/mootools-core-1.4-full.js"></script>
     <script type="text/javascript" src="js/edit-core.js"></script>
@@ -36,9 +35,8 @@
     <div id="logo" class="cwec_caption" UNSELECTABLE="on"></div>
     <div class="clear" UNSELECTABLE="on"></div>
 </div>
-<div id="welcome" class="cwec_caption" UNSELECTABLE="on">欢迎使用天翼校园 plus！</div>
+<div id="welcome" class="cwec_caption" UNSELECTABLE="on">您好，欢迎使用天翼校园！</div>
 <div id="WarningHotline" class="cwec_caption" UNSELECTABLE="on">报障热线：000-0000000</div>
-<div id="AutoSignCountDown" class="cwec_caption" UNSELECTABLE="on"></div>
 <!--天气-->
 <div id="weather" UNSELECTABLE="on">
     <img id="weather_png" src="img/sun.png" UNSELECTABLE="on"/>
@@ -76,18 +74,14 @@
             <div id="login_pad_bottom">
                 <input id="chk_save_pwd" type="checkbox" checked/>
                 <label id="lab_save_pwd" for="chk_save_pwd" UNSELECTABLE="on" class="chklabel">记住密码</label>
+                <div id="ChargeUrl" UNSELECTABLE="on">充值缴费</div>
                 <div id="ForgotPassword" UNSELECTABLE="on">忘记密码</div>
             </div>
-			<div id="login_pad_bottom">
-				<input id="chk_auto_login" type="checkbox" checked/>
-                <label id="lab_auto_login" for="chk_auto_login" UNSELECTABLE="on" class="chklabel">自动登录</label>
-				<div id="ChargeUrl" UNSELECTABLE="on">充值缴费</div>
-			</div>
             <div id="Login" >
-			<button id="login_pad_done" type="button" class="btn btn-outline-success">登 录</button>
+                <input id="login_pad_done" type="button" value="登 录"></input>
                 <div id="Logining"></div>
             </div>
-            <div id="FreeAccountUrl" UNSELECTABLE="on">校园宽带WiFi免费体验账号申请</div>  
+            <div id="FreeAccountUrl" UNSELECTABLE="on">校园宽带WiFi免费体验账号申请</div>
             <input id="login_pad_button" type="button" class="login_button"/>
             <div id="adDivBefore" UNSELECTABLE="on"></div>
             <div class="clear" UNSELECTABLE="on"></div>
@@ -140,7 +134,7 @@
 </div>
 
 <input type="button" id="SpeedUp" value="一键提速"  UNSELECTABLE="on"></input>
-<input type="button" id="loginout_pad_done" value="断    开"  UNSELECTABLE="on"  class="btn btn-outline-danger"></input>
+<input type="button" id="loginout_pad_done" value="断    开"  UNSELECTABLE="on"></input>
 </div>
 <div id="adDiv" UNSELECTABLE="on"></div>
 <!--<iframe id="market_ad" frameborder="0" scrolling="no" src="http://www.baidu.com" ></iframe>-->
@@ -165,7 +159,7 @@
 <!--公告-->
 <div id="notice" UNSELECTABLE="on">
     <marquee id="noficeList" align="absmiddle" direction="up" height="30" width="220" vspace="0" scrollamount="1" behavior="scroll" onmouseover="stop()" onmouseout="start()">
-        <div id="default_message">plus 版本</div>
+        <div id="default_message">暂无公告</div>
   </marquee>
     <a id="notice_more" title="更多" href="http://www.baidu.com" target="_blank">&gt;&gt;更多</a>
 </div>
