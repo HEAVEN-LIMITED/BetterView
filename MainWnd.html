@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="cwefeatures" content="status:hide,size:330 559,margin:6,bgimg:img/main.png"/>
+    <title>校园客户端</title>
+    <link href="css/comm.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/cwe-core.js"></script>
+    <script type="text/javascript" src="js/mootools-core-1.4-full.js"></script>
+    <script type="text/javascript" src="js/edit-core.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/globalDefine.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/infoCenter.js"></script>
+    <script type="text/javascript" src="js/dialMgr.js"></script>
+    <script type="text/javascript" src="js/funCtrl.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/aes_1.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/mainFun.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/MKtInfWnd.js"></script>
+    <script type="text/javascript" src="js/FunInterface.js"></script>
+</head>
+<body class="cwec_caption">
+<div class="cwec_caption">
+    <div id="MainWnd_Close" title="关闭" UNSELECTABLE="on"></div>
+    <div id="MainWnd_Min" class="cwec_min" title="最小化" href="#" UNSELECTABLE="on"></div>
+    <div id="menu" title="菜单" href="#" UNSELECTABLE="on"></div>
+    <div id="ChatUrl" href="#" UNSELECTABLE="on"></div>
+    <div id="InforURL" title="资讯" href="#" UNSELECTABLE="on" style="position:relative;"><i id="InforURL_Dot" style="display:none;background:#f00;border-radius:100%;width:5px;height:5px;top:0px;right:0px;position:absolute;"></i></div>
+
+    <div id="logo" class="cwec_caption" UNSELECTABLE="on"></div>
+    <div class="clear" UNSELECTABLE="on"></div>
+</div>
+<div id="welcome" class="cwec_caption" UNSELECTABLE="on">欢迎使用天翼校园 plus！</div>
+<div id="WarningHotline" class="cwec_caption" UNSELECTABLE="on">报障热线：000-0000000</div>
+<div id="AutoSignCountDown" class="cwec_caption" UNSELECTABLE="on"></div>
+<!--天气-->
+<div id="weather" UNSELECTABLE="on">
+    <img id="weather_png" src="img/sun.png" UNSELECTABLE="on"/>
+    <div id="weather_city" UNSELECTABLE="on">北京 -5~6&#8451;</div>
+</div>
+<!--登录-->
+<div id="login">
+    <div id="login_view" UNSELECTABLE="on">
+        <div id="login_checkstate" class="login_item" UNSELECTABLE="on">
+        <img id="login_loading" class="rightLoading" src="img/netJudgeLoading.gif" UNSELECTABLE="on"></img>
+        <div id="login_tips" UNSELECTABLE="on">客户端连接中</div>
+        <div id="login_fail_button" UNSELECTABLE="on">
+            <div id="NetCheckRefresh" UNSELECTABLE="on"></div>
+            <div id="NetCheckHelp" UNSELECTABLE="on"></div>
+            <div id="NetCheckTool" UNSELECTABLE="on"></div>
+        </div>
+        </div>
+        <div id="login_qr" class="login_item" UNSELECTABLE="on">
+            <div id="login_qr_title" UNSELECTABLE="on">请使用 <span id="handled" UNSELECTABLE="on"> 掌上大学</span> 扫一扫登录</div>
+            <img id="login_qr_image" src="" UNSELECTABLE="on"/>
+            <input id="login_qr_button" type="button" class="login_button" UNSELECTABLE="on"/>
+
+            <div class="clear" UNSELECTABLE="on"></div>
+        </div>
+
+        <div id="login_pad" class="login_item" UNSELECTABLE="on">
+            <div id="login_pad_title" UNSELECTABLE="on">请使用校园宽带账号登录</div>
+            <div id="login_pad_input" UNSELECTABLE="on">
+                <div id="accountblock"></div>
+                <div id="passwordblock"></div>
+                <textarea id="txt_userid" rows="1" cols="200"></textarea>
+                <textarea id="txt_passwd" rows="1" cols="200"></textarea>
+                <button id="ShowOrHidePwd" title="显示密码" class="HidePwd" UNSELECTABLE="on"></button>
+            </div>
+            <div id="login_pad_bottom">
+                <input id="chk_save_pwd" type="checkbox" checked/>
+                <label id="lab_save_pwd" for="chk_save_pwd" UNSELECTABLE="on" class="chklabel">记住密码</label>
+                <div id="ForgotPassword" UNSELECTABLE="on">忘记密码</div>
+            </div>
+			<div id="login_pad_bottom">
+				<input id="chk_auto_login" type="checkbox" checked/>
+                <label id="lab_auto_login" for="chk_auto_login" UNSELECTABLE="on" class="chklabel">自动登录</label>
+				<div id="ChargeUrl" UNSELECTABLE="on">充值缴费</div>
+			</div>
+            <div id="Login" >
+			<button id="login_pad_done" type="button" class="btn btn-outline-success">登 录</button>
+                <div id="Logining"></div>
+            </div>
+            <div id="FreeAccountUrl" UNSELECTABLE="on">校园宽带WiFi免费体验账号申请</div>  
+            <input id="login_pad_button" type="button" class="login_button"/>
+            <div id="adDivBefore" UNSELECTABLE="on"></div>
+            <div class="clear" UNSELECTABLE="on"></div>
+        </div>
+
+<div id="login_complete" class="login_item" UNSELECTABLE="on">
+<div id="login_complete_state" class="login_net_state"  UNSELECTABLE="on">
+<div id="net" UNSELECTABLE="on">网络连接</div>
+<div id="account" UNSELECTABLE="on">我的账户</div>
+</div>
+<div id="net_connect">
+<div id="net_account_info">
+<div id="net_state" UNSELECTABLE="on">
+<div id="net_state_icon" UNSELECTABLE="on"></div>
+<div id="net_state_name" UNSELECTABLE="on">网络状态</div>
+<div id="net_state_desc" UNSELECTABLE="on">已连接Internet</div>
+</div>
+
+<div class="division" UNSELECTABLE="on"></div>
+
+<div id="net_time" UNSELECTABLE="on">
+<div id="net_time_icon" UNSELECTABLE="on"></div>
+<div id="net_time_name" UNSELECTABLE="on">上网计时</div>
+<div id="net_time_desc" UNSELECTABLE="on">
+<div id="hour_icon" class="time_icon" UNSELECTABLE="on"></div>
+<div id="hour_desc" class="time_desc" UNSELECTABLE="on">时</div>
+<div id="minute_icon" class="time_icon" UNSELECTABLE="on"></div>
+<div id="minute_desc" class="time_desc" UNSELECTABLE="on">分</div>
+<div id="second_icon" class="time_icon" UNSELECTABLE="on"></div>
+<div id="second_desc" class="time_desc" UNSELECTABLE="on">秒</div>
+</div>
+</div>
+
+<div class="division" UNSELECTABLE="on"></div>
+
+<div id="net_speedrate" UNSELECTABLE="on">
+<div id="net_speed_icon" UNSELECTABLE="on"></div>
+<div id="net_speed_name" UNSELECTABLE="on">实时速率</div>
+<div id="net_speed_up" UNSELECTABLE="on"></div>
+<div id="net_speed_desc" UNSELECTABLE="on">
+<div id="up_speed" UNSELECTABLE="on">
+<div id="up_speed_icon" UNSELECTABLE="on"></div>
+<div id="up_speed_desc" UNSELECTABLE="on">0 kb/s</div>
+</div>
+<div id="down_speed" UNSELECTABLE="on">
+<div id="down_speed_icon" UNSELECTABLE="on"></div>
+<div id="down_speed_desc" UNSELECTABLE="on">0 kb/s</div>
+</div>
+</div>
+</div>
+
+<input type="button" id="SpeedUp" value="一键提速"  UNSELECTABLE="on"></input>
+<input type="button" id="loginout_pad_done" value="断    开"  UNSELECTABLE="on"  class="btn btn-outline-danger"></input>
+</div>
+<div id="adDiv" UNSELECTABLE="on"></div>
+<!--<iframe id="market_ad" frameborder="0" scrolling="no" src="http://www.baidu.com" ></iframe>-->
+</div>
+<div id="net_account" UNSELECTABLE="on">
+<img id="loading_account" src="img/netJudgeLoading.gif" UNSELECTABLE="on" />
+<iframe id="AccountInfo" frameborder="0" scrolling="no" src=""  UNSELECTABLE="on"></iframe>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+<!--公告-->
+<div id="notice" UNSELECTABLE="on">
+    <marquee id="noficeList" align="absmiddle" direction="up" height="30" width="220" vspace="0" scrollamount="1" behavior="scroll" onmouseover="stop()" onmouseout="start()">
+        <div id="default_message">plus 版本</div>
+  </marquee>
+    <a id="notice_more" title="更多" href="http://www.baidu.com" target="_blank">&gt;&gt;更多</a>
+</div>
+</body>
+</html>

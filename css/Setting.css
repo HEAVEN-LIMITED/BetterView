@@ -1,0 +1,198 @@
+﻿body 
+{
+	background:url(../img/settingBg.png) no-repeat;
+	height:429px;
+	width:410px;
+	font-family:"Microsoft YaHei",微软雅黑;
+	font-size:12px;
+	cursor:default;
+}
+
+#SettingTittle
+{
+	margin:10px 0px 0px 0px;
+	width:400px;
+	height:35px;
+}
+
+#SettingText 
+{
+	float:left;
+	margin:0px 0px 0px 8px;
+	color:White;
+	font-size:14px;
+}
+
+#CloseSettingDiv
+{
+	width:365px;
+	height:120px;
+	margin:15px 25px 0px 25px;
+	position:relative;
+}
+
+#Close_setting 
+{
+	position:absolute;
+	background:url(../img/CloseSetting.png) no-repeat;
+	left:5px;
+	top:10px;
+	color:Black;
+	height:100px;
+	width:345px;
+	z-index:0;
+}
+
+#CloseSettingText
+{
+	position:absolute;
+	top:0px;
+	left:16px;
+	z-index:70;
+	font-size:14px;
+}
+
+.CloseSettingItem
+{
+	position:relative;
+	margin:10px 0px 0px 10px;
+	font-size:12px;
+}
+
+#OtherSettingDiv
+{
+	width:365px;
+	height:120px;
+	margin:20px 0px 0px 25px;
+	position:relative;
+}
+
+#Other_setting 
+{
+	position:absolute;
+	background:url(../img/OtherSetting.png) no-repeat;
+	left:5px;
+	top:10px;
+	color:Black;
+	height:80px;
+	width:355px;
+	z-index:0;
+}
+
+#OtherSettingText
+{
+	position:absolute;
+	top:0px;
+	left:16px;
+	z-index:1;	
+	font-size:14px;
+}
+
+#RebootStartText
+{
+	position:relative;
+	margin:20px 0px 0px 10px;
+	font-size:12px;
+}
+
+#Button
+{
+	position:relative;
+	margin:0px 0px 0px 20px;
+	width:365px;
+	height:65px;
+}
+
+#sure
+{
+	background:url(../img/Btnnor.png) no-repeat;
+	margin:10px 0px 0px 10px;
+	color:Black;
+	height:44px;
+	width:129px;
+	border:0px;
+	font-size:17px;
+}
+
+#sure:hover
+{
+	background:url(../img/Btnnor.png) no-repeat;
+	background-position:-129px 0px;
+	margin:10px 0px 0px 10px;
+	color:Black;
+	height:44px;
+	width:129px;
+	border:0px;
+	font-size:17px;
+}
+
+#sure:active
+{
+	background:url(../img/Btnnor.png) no-repeat;
+	background-position:-258px 0px;
+	margin:10px 0px 0px 10px;
+	color:Black;
+	height:44px;
+	width:129px;
+	border:0px;
+	font-size:17px;
+}
+
+#cancel
+{
+	background:url(../img/Btnnor.png) no-repeat;
+	background-position:0px,0px;
+	margin:10px 0px 0px 30px;
+	color:Black;
+	height:44px;
+	width:129px;
+	border:0px;
+	font-size:17px;
+}
+
+#cancel:hover
+{
+	background:url(../img/Btnnor.png) no-repeat;
+	background-position:-129px 0px;
+	margin:10px 0px 0px 30px;
+	color:Black;
+	height:44px;
+	width:129px;
+	border:0px;
+	font-size:17px;
+}
+
+#cancel:active
+{
+	background:url(../img/Btnnor.png) no-repeat;
+	background-position:-258px 0px;
+	margin:10px 0px 0px 30px;
+	color:Black;
+	height:44px;
+	width:129px;
+	border:0px;
+	font-size:17px;
+}
+
+select
+{
+    background:url(../img/Combo.png) 0 center no-repeat;
+    width:88px;
+    height:32px;
+}
+
+select:hover
+{
+    background:url(../img/Combo.png) -88px center no-repeat;
+}
+
+select:active
+{
+    background:url(../img/Combo.png) -176px center no-repeat;
+}
+
+option
+{
+    width:88px;
+    height:32px;     
+}

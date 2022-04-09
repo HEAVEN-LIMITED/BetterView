@@ -1,0 +1,171 @@
+﻿body
+{
+	background:url(../img/MsgBoxBg.png) no-repeat -5px -5px;
+	width:368px;
+	height:204px;
+	font-family:"Microsoft YaHei",微软雅黑;
+	font-size:12px;
+	overflow:hidden;
+}
+
+#DlgExitTittle
+{
+	width:355px;
+	height:30px;
+	overflow:hidden;	
+}
+
+#DlgExitClose
+{
+	border:none;
+	margin:7px 10px 0px 0px;	
+	cursor:pointer;
+}
+
+
+#DlgExitText
+{
+	width:45px;
+	height:30px;
+	line-height:30px;
+	float:left;
+	margin:0px 0px 0px 10px;	
+	color:White;
+}
+
+#DlgExitBody
+{
+	width:343px;
+	height:171px;	
+	margin:0 0 0 0;
+}
+
+#DlgExitItem
+{
+	width:343px;
+	height:100px;
+	margin:5px 0 0 0;	
+}
+
+#DlgExitTips
+{
+	width:343px;
+	height:15px;
+	margin:10px 0 0 90px;
+}
+
+#DlgExitMin
+{
+	width:343px;
+	height:15px;
+	margin:10px 0 0 90px;
+}
+
+#DlgExit
+{
+	width:343px;
+	height:15px;
+	margin:5px 0 0 90px;
+}
+
+#DlgExitSave
+{
+	width:343px;
+	height:15px;
+	margin:5px 0 0 90px;
+}
+
+
+
+
+
+#DlgExitItem Label
+{
+	display:block;
+	padding-left:22px;
+	height:13px;	
+	line-height:15px;
+	cursor:pointer;
+	float:left;	
+}
+
+#DlgExitItem input
+{
+	margin-left:-200px;
+	float:left;	
+}
+
+
+.ChoiceRadioLabel
+{
+	background:url(../img/RadioChecked.png) no-repeat;		
+}
+
+.NotChoiceRadioLabel
+{
+	background:url(../img/Radio.png) no-repeat;		
+}
+
+
+.ChoiceBoxLabel
+{
+	background:url(../img/CheckBoxChecked.png) no-repeat;	
+}
+
+.NotChoiceBoxLabel
+{
+	background:url(../img/CheckBox.png) no-repeat;
+}
+
+#ButtonItem
+{
+	width:343px;
+	height:40px;
+	margin-top:10px;
+}
+
+#certain
+{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:left;	
+	border:none;
+	font-size:14px;
+	margin-left:50px;
+	color:Green;
+	cursor:pointer;
+}
+
+#certain:hover
+{
+	background-position:-88px center;
+}
+
+#certain:active
+{
+	background-position:-176px center;
+}
+
+#cancel
+{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:left;	
+	font-size:14px;
+	border:none;
+	margin-left:75px;
+	color:Gray;
+	cursor:pointer;
+}
+
+#cancel:hover
+{
+	background-position:-88px center;
+}
+
+#cancel:active
+{
+	background-position:-176px center;
+}

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset=uft-8 />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta name="cwefeatures" content="size:368 204,margin:5,bgimg:img/MsgBoxBg.png" />
+<title>提示</title>
+<link href="css/comm.css" rel="stylesheet" type="text/css" />
+<link href="css/DlgExit.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/cwe-core.js"></script>
+<script type="text/javascript" src="js/mootools-core-1.4-full.js"></script>
+<script type="text/javascript" src="js/infocenter.js"></script>
+<script type="text/javascript" src="js/DlgExit.js"></script>
+</head>
+<body  UNSELECTABLE="on">
+<div id="DlgExitTittle" class="cwec_caption" UNSELECTABLE="on">
+<div id="DlgExitText" class="cwec_caption" UNSELECTABLE="on">提示</div>
+<button class="cwec_close" id="DlgExitClose" title="关闭"  UNSELECTABLE="on"></button>
+</div>
+<div id="DlgExitBody" UNSELECTABLE="on">
+<div id="DlgExitItem" UNSELECTABLE="on">
+<div id="DlgExitTips" UNSELECTABLE="on">点击了关闭按钮，您是想：</div>
+<div id="DlgExitMin" UNSELECTABLE="on"><input type="radio" name="CloseMode" id="Minisize" UNSELECTABLE="on" /><label id="Lab_Minisize" for="Minisize" UNSELECTABLE="on" class="NotChoiceRadioLabel">最小化到托盘，不退出客户端</label></div>
+<div id="DlgExit" UNSELECTABLE="on"><input type="radio" name="CloseMode" id="Exit" UNSELECTABLE="on" checked/><label id="Lab_Exit" for="Exit" UNSELECTABLE="on" class="ChoiceRadioLabel">退出程序</label></div>
+<div id="DlgExitSave" UNSELECTABLE="on"><input type="checkbox" id="SaveCloseConfig" UNSELECTABLE="on"/><label id="Lab_SaveCloseConfig" for="SaveCloseConfig" UNSELECTABLE="on" class="NotChoiceBoxLabel">保存设置，不再提醒</label></div>
+</div>
+<div id="ButtonItem" UNSELECTABLE="on">
+<input type="button" value="确定" id="certain" UNSELECTABLE="on"></input>
+<input type="button" value="取消" id="cancel" UNSELECTABLE="on"></input>
+</div>
+</div>
+
+</body>

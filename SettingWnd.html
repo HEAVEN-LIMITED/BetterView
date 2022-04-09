@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta name="cwefeatures" content="size:410 479,margin:8,bgimg:img/SettingWndBg.png" />
+<title>设置</title>
+<link href="css/comm.css" rel="stylesheet" type="text/css" />
+<link href="css/SettingWnd.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/cwe-core.js"></script>
+<script type="text/javascript" src="js/mootools-core-1.4-full.js"></script>
+<script type="text/javascript" src="js/infoCenter.js"></script>
+<script type="text/javascript" src="js/SettingWnd.js"></script>
+</head>
+<body class="cwec_caption">
+<div id="focusitem">
+<div id="SettingTittle" class="cwec_caption" UNSELECTABLE="on">
+<div id="SettingText" class="cwec_caption" UNSELECTABLE="on">设置</div>
+<button id="SettingClose" title="关闭"></button>
+</div>
+
+<div class="clear" UNSELECTABLE="on"></div>
+
+<div id="CloseSettingDiv" UNSELECTABLE="on">
+    <div id="CloseSettingText" UNSELECTABLE="on">关闭设置</div>
+    <div id="Close_setting" UNSELECTABLE="on">
+        <!--<div id="ChoiceTips" UNSELECTABLE="on">点击了关闭按钮，您是想：</div>-->
+        <span id="blank" UNSELECTABLE="on"></span>
+        <div id="MinisizeDiv" UNSELECTABLE="on"><input type="radio" name="CloseMode" id="Minisize" UNSELECTABLE="on"/><label id="Lab_Minisize" for="Minisize" UNSELECTABLE="on" class="NotChoiceRadioLabel">最小化到托盘，不退出客户端</label></div>
+        <div id="ExitDiv" UNSELECTABLE="on">
+            <input type="radio" name="CloseMode" id="Exit" UNSELECTABLE="on" checked/>
+            <label id="Lab_Exit" for="Exit" UNSELECTABLE="on" class="ChoiceRadioLabel">退出程序</label>
+        </div>
+        <div id="SaveCloseDiv" UNSELECTABLE="on"><input type="checkbox" id="SaveCloseConfig" UNSELECTABLE="on"/><label id="Lab_SaveCloseConfig" for="SaveCloseConfig" UNSELECTABLE="on" class="NotChoiceBoxLabel">保存设置，不再提醒</label></div>
+    </div>
+</div>
+
+<div id="OtherSettingDiv" UNSELECTABLE="on">
+    <div id="OtherSettingText" UNSELECTABLE="on">其他设置</div>
+    <div id="Other_setting" UNSELECTABLE="on">
+         <div><input type="checkbox" id="RebootStart" UNSELECTABLE="on" checked/><label id="Lab_RebootStartText" for="RebootStart" UNSELECTABLE="on" class="ChoiceBoxLabel">开机时自动启动</label></div>
+         <div id="RemindInfoStartDiv" style="display: none;"><input type="checkbox" id="RemindInfoStart" UNSELECTABLE="on" checked/><label id="Lab_RemindInfoStartText" for="RemindInfoStart" UNSELECTABLE="on" class="ChoiceBoxLabel">打开客户端后，自动弹出资讯界面</label></div>
+    </div>
+</div>
+
+<div id="WeatherSettingDiv" UNSELECTABLE="on">
+    <div id="WeatherSettingText" UNSELECTABLE="on">天气预报</div>
+    <div id="Weather_setting" UNSELECTABLE="on">
+         <div id="weather" UNSELECTABLE="on">
+            <div id="default" UNSELECTABLE="on">默认显示城市：</div>
+            <div id="ReplaceProvince" class="replace" UNSELECTABLE="on">
+                <div id="CurrentProvince" class="current" UNSELECTABLE="on"></div>
+                   <ul id="ProvinceOptions" class="options" UNSELECTABLE="on">
+                   </ul>
+            </div>
+            <div id="ReplaceCity" class="replace" UNSELECTABLE="on">
+                <div id="CurrentCity" class="current" UNSELECTABLE="on"></div>
+                   <ul id="CityOptions" class="options" UNSELECTABLE="on">
+                   </ul>
+            </div>
+         </div>  
+    </div>
+</div>
+
+<div id="Button" UNSELECTABLE="on">
+    <div id="SureDiv"><input type="button" value="确定" id="sure" UNSELECTABLE="on"/></div>
+    <div id="CancelDiv"><input type="button" value="取消" id="cancel" UNSELECTABLE="on"/></div>
+</div>
+</div>
+</body>
+</html>

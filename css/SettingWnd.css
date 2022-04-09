@@ -1,0 +1,429 @@
+﻿body 
+{
+	background:url(../img/SettingWndBg.png) no-repeat -8px -8px;
+	height:479px;
+	width:410px;
+	font-family:"Microsoft YaHei",微软雅黑;
+	font-size:12px;
+	cursor:default;
+	overflow:hidden;
+}
+
+#focusitem
+{
+    height:479px;
+	width:410px;
+}
+
+#SettingClose
+{
+	background:url(../img/close.png) no-repeat 0 center;
+	float:right;
+	margin:8px 8px 0px 0px;
+	width:15px;
+	height:15px;
+	border:none;
+	cursor:hand;
+}
+
+#SettingClose:hover {
+background-position:-15px center;
+}
+
+#SettingClose:active {
+background-position:-30px center;
+}
+
+#SettingTittle
+{
+	width:400px;
+	height:30px;
+}
+
+#SettingText 
+{
+	background:url(../img/SLogo.png) 0 center no-repeat;
+	text-align:center;
+	float:left;
+	width:80px;
+	margin:0px 0px 0px 8px;
+	color:White;
+	font-size:15px;
+	line-height:30px;
+	text-align:center;
+}
+
+#CloseSettingDiv
+{
+	width:360px;
+	height:120px;
+	margin:9px 0px 0px 17px;
+	position:relative;
+}
+
+#Close_setting 
+{
+	position:absolute;
+	background:url(../img/CloseSetting.png) no-repeat;
+	left:7px;
+	top:10px;
+	color:Black;
+	height:100px;
+	width:345px;
+	z-index:0;
+}
+
+#Close_setting div
+{
+	width:345px;
+	height:15px;
+	margin-left:20px;
+	line-height:15px;
+}
+
+#ChoiceTips
+{
+	margin-top:16px;
+}
+
+#MinisizeDiv
+{
+	margin-top:10px;	
+}
+
+#ExitDiv
+{
+	margin-top:6px;
+}
+
+#SaveCloseDiv
+{
+	margin-top:6px;	
+}
+
+#Close_setting Label
+{
+	display:block;
+	padding-left:22px;
+	height:13px;	
+	line-height:15px;
+	cursor:pointer;
+	float:left;	
+}
+
+#Close_setting input
+{
+	margin-left:-200px;
+	float:left;	
+}
+
+
+#CloseSettingText
+{
+	position:absolute;
+	top:0px;
+	left:18px;
+	z-index:70;
+	font-size:14px;
+}
+
+.ChoiceLabel
+{
+	display:inline-block;
+
+}
+
+.ChoiceRadioLabel
+{
+	background:url(../img/RadioChecked.png) no-repeat;
+	height:13px;
+	line-height:15px;
+	cursor:pointer;		
+}
+
+
+.NotChoiceRadioLabel
+{
+	background:url(../img/Radio.png) no-repeat;	
+	height:13px;
+	line-height:15px;
+	cursor:pointer;	
+}
+
+
+.ChoiceBoxLabel
+{
+	background:url(../img/CheckBoxChecked.png) no-repeat;	
+	height:13px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+.NotChoiceBoxLabel
+{
+	background:url(../img/CheckBox.png) no-repeat;
+	height:13px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+#OtherSettingDiv
+{
+	width:360px;
+	height:80px;
+	margin:11px 0px 0px 17px;
+	position:relative;
+}
+
+.OtherSettingDivBig
+{
+	width:360px;
+	height:100px !important;
+	margin:11px 0px 0px 17px;
+	position:relative;
+}
+
+#Other_setting 
+{
+	position:absolute;
+	background:url(../img/OtherSetting.png) no-repeat;
+	left:5px;
+	top:15px;
+	color:Black;
+	height:60px;
+	width:345px;
+	z-index:0;
+}
+
+.Other_setting_Big 
+{
+	position:absolute;
+	background:url(../img/CloseSetting.png) no-repeat !important;
+	left:5px;
+	top:15px;
+	color:Black;
+	height:100px !important;
+	width:345px;
+	z-index:0;
+}
+
+#Other_setting div
+{
+	width:345px;
+	height:15px;
+	margin-left:20px;
+	margin-top:25px;
+	line-height:15px;
+}
+
+#Other_setting input
+{
+	margin-left:-200px;
+	float:left;	
+}
+
+#Other_setting Label
+{
+	display:block;
+	padding-left:22px;
+	height:13px;	
+	line-height:15px;
+	cursor:pointer;
+	float:left;	
+}
+
+#OtherSettingText
+{
+	position:absolute;
+	top:5px;
+	left:17px;
+	z-index:1;	
+	font-size:14px;
+}
+
+#RebootStartText
+{
+	position:relative;
+	margin:20px 0px 0px 10px;
+	font-size:12px;
+}
+
+#WeatherSettingDiv
+{
+	width:360px;
+	height:80px;
+	margin:11px 0px 0px 17px;
+	position:relative;
+}
+
+#WeatherSettingText
+{
+	position:absolute;
+	top:5px;
+	left:17px;
+	z-index:1;	
+	font-size:14px;
+}
+
+#Weather_setting 
+{
+	position:absolute;
+	background:url(../img/OtherSetting.png) no-repeat;
+	left:5px;
+	top:15px;
+	color:Black;
+	height:60px;
+	width:345px;
+	z-index:0;
+}
+
+#weather
+{
+    width:330px;
+    height:32px;
+    margin:15px 0px 0px 10px;
+}
+
+#default
+{
+    width:100px;
+    height:32px;
+    float:left;
+    line-height:32px;
+        
+}
+
+.replace 
+{
+    display:block;
+    cursor:default;
+    width:100px;
+    float:left;
+    text-align:center;
+    line-height:32px;
+    overflow:hidden;
+}
+
+#ReplaceCity
+{
+    margin-left:10px;    
+}
+
+.current 
+{ 
+    background:url(../img/Combo.png) 0 center no-repeat;
+    width:98px;
+    height:32px;
+    border:none;
+    padding:0;
+}
+
+.current:hover 
+{ 
+    background:url(../img/Combo.png) -98px no-repeat;
+}
+
+.current:active 
+{ 
+    background:url(../img/Combo.png) -196px no-repeat;
+}
+
+li
+{
+    width:98px;
+    height:20px;    
+    line-height:20px;
+    text-align:center;
+}
+
+.options 
+{  
+  background-color:#FFF;
+  display:none;
+  list-style-type:none;
+  padding:0px;
+  margin-top:0;
+  margin-left:0;
+  width:98px;
+  height:100px;
+  overflow:auto;
+  overflow-x:hidden;
+}
+
+li:hover
+{
+    background-color:#ECF7C4;
+}
+
+#Button
+{
+	margin-top:30px;
+	width:350px;
+	height:44px;
+	margin-left:44px;
+}
+
+#sure
+{
+	background:url(../img/SettingWnd_Sure.png) no-repeat;
+	color:White;
+	height:44px;
+	width:129px;
+	border:0px;
+	font-size:14px;
+	color:green;
+}
+
+#sure:hover
+{
+	background-position:-129px 0px;
+}
+
+#sure:active
+{
+	background-position:-258px 0px;
+}
+
+#cancel
+{
+	background:url(../img/SettingWnd_Cancel.png) no-repeat;
+	height:44px;
+	width:129px;
+	border:0px;
+	font-size:14px;
+	color:#50a6fd;
+	color:Gray;
+}
+
+#cancel:hover
+{
+	background-position:-129px 0px;
+}
+
+#cancel:active
+{
+	background-position:-258px 0px;
+}
+
+#SureDiv
+{
+	float:left;
+	width:129px;
+	height:44px;	
+}
+
+#CancelDiv
+{
+	float:left;
+	margin-left:25px;
+	width:129px;
+	height:44px;	
+}
+
+#blank
+{
+    width:300px;
+    height:15px;    
+    display:block;
+    
+}

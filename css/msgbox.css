@@ -1,0 +1,336 @@
+﻿body
+{
+	background:url(../img/MsgBoxBg.png) no-repeat -5px -5px;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ;
+	font-size:12px;
+	width:368px;
+	height:204px;
+	overflow:hidden;	
+}
+
+#msgbox_title
+{
+	width:358px;
+	height:30px;	
+}
+
+
+#MsgBoxClose {
+background:url(../img/close.png) no-repeat 0 center;
+border:none;
+cursor:hand;
+float:right;
+margin:8px 5px 0 0;
+width:15px;
+height:15px;
+}
+#MsgBoxClose:hover {
+background-position:-15px center;
+}
+#MsgBoxClose:active {
+background-position:-30px center;
+}
+
+#logo_text
+{
+	background:url(../img/SLogo.png) 0 center no-repeat;
+	text-align:center;
+	color:White;
+	float:left;
+	margin:6px 0px 0px 10px;
+	font-size: 15px;
+	width: 80px;
+}
+
+#content
+{
+	width:343px;
+	height:148px;
+	overflow:hidden;
+}
+
+#tips
+{
+	font-family:"Microsoft YaHei",微软雅黑;
+	width:300px;
+	height:65px;
+	vertical-align:middle;
+	padding-left:25px;
+	padding-top:35px;
+}
+
+#tips div{
+	font-size: 18px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#ButtonStyleOne
+{
+	width:368px;
+	height:48px;
+	display: none;
+}
+
+#HelpLink
+{
+	display: none;
+	width:100px;
+	height:35px;
+	float:left;
+	color:#de8262;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+	background-color:#F3F6F9;
+	text-decoration:underline;
+	margin:6px 0 0 20px;
+	cursor:pointer;
+}
+
+
+#certain
+{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:right;
+	margin:0px 25px 15px 0px;
+	color:Green;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+}
+
+#certain:hover
+{
+	background-position:-88px center;
+}
+
+#certain:active
+{
+	background-position:-176px center;
+}
+
+#ButtonStyleTwo
+{
+	width:368px;
+	height:48px;
+	display:none;		
+}
+
+#yesbutton {
+	display:none;
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:left;
+	margin-left:20px;
+	color:Green;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+}
+
+#yesbutton:hover
+{
+	background-position:-88px center;
+}
+
+#yesbutton:active
+{
+	background-position:-176px center;
+}
+
+#chargebutton{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:right;
+	margin-right:20px;
+	color:Green;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+}
+
+#chargebutton:hover
+{
+	background-position:-88px center;
+}
+
+#chargebutton:active
+{
+	background-position:-176px center;
+}
+
+#yes
+{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:left;
+	margin-left:20px;
+	color:Green;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+}	
+
+#yes:hover
+{
+	background-position:-88px center;
+}
+
+#yes:active
+{
+	background-position:-176px center;
+}
+
+#ButtonStyleThree
+{
+	width:368px;
+	height:48px;
+	display:none;		
+}
+
+#no
+{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:right;
+	margin-right:20px;
+	color:#fff;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+}	
+
+#no:hover
+{
+	background-position:-88px center;
+}
+
+#no:active
+{
+	background-position:-176px center;
+}
+
+#sure
+{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:left;
+	margin-left:20px;
+	color:Green;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+}	
+
+#sure:hover
+{
+	background-position:-88px center;
+}
+
+#sure:active
+{
+	background-position:-176px center;
+}
+
+#cancel
+{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:left;
+	margin-left:140px;
+	color:#de8262;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+}	
+
+#cancel:hover
+{
+	background-position:-88px center;
+}
+
+#cancel:active
+{
+	background-position:-176px center;
+}
+
+#loading_msgbox
+{
+	width:31px;
+	height:31px;
+	margin:30px 0 0 150px;
+}
+
+#urlDiv
+{
+	display: none;
+}
+
+#ButtonStyleFive
+{
+	width:368px;
+	height:48px;
+	display:none;		
+}
+
+/** zhangliangming 2020.06.14 欠费充值 **/
+#ButtonStyleSix
+{
+	width:368px;
+	height:48px;
+}
+
+#cancelBtn
+{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:left;
+	margin-left:20px;
+	color:#de8262;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+}	
+
+#cancelBtn:hover
+{
+	background-position:-88px center;
+}
+
+#cancelBtn:active
+{
+	background-position:-176px center;
+}
+
+#chargeBtn
+{
+	background:url(../img/MsgBoxBtn.png) no-repeat;
+	width:88px;
+	height:32px;
+	float:left;
+	margin-left:140px;
+	color:Green;
+	font-size:14px;
+	font-weight:700;
+	border:none;
+}	
+
+#chargeBtn:hover
+{
+	background-position:-88px center;
+}
+
+#chargeBtn:active
+{
+	background-position:-176px center;
+}

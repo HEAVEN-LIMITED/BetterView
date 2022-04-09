@@ -1,0 +1,213 @@
+﻿body 
+{
+	width:410px;
+	height:299px;
+	background:url(../img/SpeedUpBg.png) no-repeat -5px -5px;
+	font-family:"Microsoft YaHei",微软雅黑;
+	font-size:12px;
+	overflow:hidden;
+}
+
+#SpeedUp_Head
+{
+    width:400px;
+    height:76px;    
+}
+
+#SpeedUp_Tittle
+{
+    width:400px;
+    height:30px;    
+}
+
+#SpeedUp_Logo
+{
+    background:url(../img/SpeedUpLogo.png) 0 center no-repeat;    
+    height:30px;
+    width:73px;
+    margin-left:10px;
+    float:left;
+}
+
+#SpeedUpClose,#SpeedUpMin
+{
+    border:none;   
+    cursor:pointer; 
+}
+
+#SpeedUpClose {
+background:url(../img/close.png) no-repeat 0 center;
+float:right;
+margin:3px 2px 3px 6px;
+width:15px;
+height:15px;
+margin-right:5px;
+}
+#SpeedUpClose:hover {
+background-position:-15px center;
+}
+#SpeedUpClose:active {
+background-position:-30px center;
+}
+
+#UserInfo
+{
+    color:Red;
+    height:20px;
+    width:380px;
+    line-height:15px;
+    margin-left:10px; 
+    margin-top:10px;   
+}
+
+#ProgressBarBg
+{
+   background:url(../img/SpeedUpProBg.png) 0 center no-repeat; 
+   width:400px;
+   height:10px;  
+   margin-top:10px;     
+}
+
+#ProgressBar
+{
+   background:url(../img/SpeedUpProFt.png) 0 center no-repeat; 
+   width:10%;
+   height:10px;       
+   display:block;
+}
+
+#Timing
+{
+    width:400px;
+    height:40px;   
+    margin-top:10px; 
+}
+
+#TimingLogo
+{
+   background:url(../img/TimeLogo.png) 0 center no-repeat;   
+   width:26px;
+   height:40px;
+   float:left;
+   margin-left:20px;
+}
+
+
+#TimingTips
+{
+    width:80px;
+    height:40px;
+    line-height:40px;
+    text-align:left;
+    float:left;    
+    font-size:18px;
+    margin-left:10px;
+}
+
+
+#net_time_desc
+{
+    width:130px;
+    height:40px;
+    float:left;   
+    margin-left:20px;
+}
+
+.time_icon
+{
+    background:url(../img/time.png) 0 center no-repeat;
+    width:27px;
+    height:27px;       
+    float:left;
+    margin:7px 0 0 0;
+    color:White;
+    text-align:center;
+    line-height:27px;
+    
+}
+
+.time_desc
+{
+    width:15px;
+    height:27px;       
+    float:left;
+    line-height:27px;    
+    text-align:center; 
+    margin:7px 0 0 0; 
+}
+
+
+#SpeedUpDesc
+{
+    width:400px;
+    height:40px; 
+    margin-top: 10px;   
+}
+
+#SrcSpeed,#TarSpeed
+{
+   width:400px;
+   height:20px; 
+}
+
+#SrcDesc,#TarDesc
+{
+   float:left;
+   line-height:20px;
+   text-align:left;
+   width:80px;
+   height:20px; 
+   margin-left:20px;    
+}
+
+#SrcConcreteSpeed,#TarConcreteSpeed
+{
+   float:left;
+   line-height:20px;
+   text-align:left;
+   width:40px;
+   height:20px;  
+ 
+}
+
+#SpeedUpTips
+{
+   float:left;
+   line-height:20px;
+   text-align:left;
+   width:250px;
+   height:20px;    
+}
+
+#SpeedUpButton
+{
+    background:url(../img/SpeedUpBtn.png) 0 center no-repeat;
+    width:268px;
+    height:44px;
+    margin-left:66px;
+    line-height:44px;
+    text-align:center; 
+    color:#4CB551;   
+    margin-top:20px;
+    border:none;
+}
+
+#SpeedUpButton:hover
+{
+    background:url(../img/SpeedUpBtn.png) -268px center no-repeat;
+}
+
+#SpeedUpButton:active
+{
+    background:url(../img/SpeedUpBtn.png) -536px center no-repeat;
+}
+
+#SpeedUpWarning
+{
+    width:400px;
+    text-align:center;
+    height:20px;
+    line-height:20px;
+    color:#ff6000;
+    margin-top:10px;        
+}

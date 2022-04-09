@@ -1,0 +1,869 @@
+﻿body {
+background:url(../img/main.png) no-repeat -6px -6px;
+height:543px;
+color:#000;
+overflow:hidden;
+font-family:"Microsoft YaHei",微软雅黑;
+}
+
+::-ms-clear,::-ms-reveal
+{
+	display: none;
+}
+
+#MainWnd_Close 
+{
+    background:url(../img/close.png) no-repeat 0 center;
+    float:right;
+    margin:8px 8px 3px 6px;
+    width:15px;
+    height:15px;
+    border:none;
+    cursor:pointer;
+}
+
+#MainWnd_Close:hover {
+    background-position:-15px center;
+}
+
+#MainWnd_Close:active {
+    background-position:-30px center;
+}
+
+#ChatUrl{
+    background:url(../img/icon_customer.png) no-repeat 0 center;
+    width:18px;
+    height: 16px;
+    float:right;
+    margin:5px 2px 3px 6px;
+    display: none;
+}
+
+#logo {
+background:url(../img/logo.png) no-repeat 0 0;
+float:left;
+margin:6px 2px 3px 6px;
+width:85px;
+height:15px;
+}
+#menu {
+background:url(../img/menu.png) no-repeat 0 center;
+float:right;
+margin:5px 2px 3px 6px;
+width:28px;
+height:16px;
+cursor:pointer;
+}
+#menu:hover {
+background-position: -28px center;
+}
+#menu:active {
+background-position: -56px center;
+}
+#InforURL {
+display: none;
+background:url(../img/info.png) no-repeat 0 center;
+float:right;
+margin:5px 2px 3px 6px;
+width:28px;
+height:16px;
+cursor:pointer;
+}
+#InforURL:hover {
+background-position: -28px center;
+}
+#InforURL:active {
+background-position: -56px center;
+}
+
+#MainWnd_Close,#MainWnd_Min
+{
+  cursor:pointer;  
+}
+#MainWnd_Min {
+margin:5px 0px 3px 6px;
+}
+#MainWnd_Close {
+background:url(../img/close.png) no-repeat 0 center;
+float:right;
+margin:5px 2px 3px 6px;
+width:15px;
+height:15px;
+}
+#cwec_close:hover {
+background-position:-15px center;
+}
+#cwec_close:active {
+background-position:-30px center;
+}
+    
+#welcome {
+position:absolute;
+left:20px;
+top:56px;
+width:170px;
+height:20px;
+font-size:13px;
+font-style:oblique;
+color:White;
+}
+
+#WarningHotline {
+position:absolute;
+left:20px;
+top:56px;
+width:200px;
+height:20px;
+font-size:13px;
+margin-top:30px;
+color:White;
+display:none;
+}
+
+
+#weather {
+display:none; 
+position:absolute;
+left:216px;
+top:32px;
+width:100px;
+height:80px;
+font-size:14px;
+text-align:center;
+cursor:pointer;
+}
+#weather_city
+{
+   color:White;
+   font-size:12px;
+}
+
+#login {
+position:absolute;
+margin-top:92px;
+width:320px;
+height:395px;
+overflow:hidden;
+}
+#login_view {
+width:1280px;
+height:100%;
+}
+.login_item {
+width:320px;
+height:100%;
+float:left;
+overflow:hidden;
+margin-top: 1px;
+}
+
+#login_qr_title {
+text-align:center;
+height:30px;
+line-height:30px;
+font-size:13px;
+color:#f00;
+margin:20px auto 0 auto;
+}
+#login_qr_title  a {
+margin:0 6px;
+color:#f00;
+}
+#login_qr_image {
+display:block;
+width:176px;
+height:176px;
+margin:8px auto;
+}
+#login_qr_button {
+margin-top:100px;
+background:url(../img/code.png) no-repeat 0 center;
+}
+#login_qr_button:hover {
+background-position: -123px center;
+}
+#login_qr_button:active {
+background-position: -246px center;
+}
+#login_pad_title {
+margin:20px 10px 6px 20px;
+text-align:left;
+height:30px;
+width:280px;
+line-height:30px;
+font-size:13px;
+color:#f00;
+}
+#login_pad_input {
+/* background:url(../img/inputedit_bk.png) no-repeat 0 center; */
+margin:6px auto;
+width:282px;
+height:74px;
+}
+
+#accountblock
+{
+    width:28px;
+    height:28px;
+    position:absolute;
+    float:right;
+    background-color: white;
+    margin:3px 0 0 211px;
+    display:none;
+}
+
+#passwordblock
+{
+    width:28px;
+    height:28px;
+    position:absolute;
+    float:right;
+    background-color: white;
+    margin:40px 0 0 211px;
+    display:none;
+}
+
+
+#login_pad_input  textarea {
+width:200px;
+height:30px;
+line-height:30px;
+margin:2px 1px 2px 40px;
+font-size:13px;
+border:none;
+float:left;
+font-family: "Microsoft YaHei";
+white-space:nowrap;
+overflow:hidden;
+}
+
+#login_pad_input  input {
+width:200px;
+height:30px;
+line-height:30px;
+margin:2px 1px 2px 40px;
+font-size:13px;
+border:none;
+float:left;
+}
+
+
+#ChargeUrl
+{
+width:60px;
+height:30px;
+display:block;
+float:right;
+cursor:pointer;
+text-align:right;
+color:Green;
+text-decoration:underline;
+}
+#ForgotPassword
+{
+    width:60px;
+    height:30px;
+    display:block;
+    float:right;
+    cursor:pointer;
+    text-align:right;
+    color:Green;
+    text-decoration:underline;
+}
+#FreeAccountUrl
+{
+height:30px;
+margin-right: 20px;
+display:block;
+float:right;
+cursor:pointer;
+text-align:right;
+color:Green;
+text-decoration:underline;
+}
+#more_userid {
+background:url(../img/more.png) no-repeat center 18px;
+}
+#view_passwd {
+background:url(../img/showpwd.png) no-repeat center 16px;
+}
+#login_pad_bottom {
+overflow:hidden;
+margin:3px auto;
+width:272px;
+height:30px;
+}
+#login_pad_bottom  input[type=checkbox] {
+margin-left:-200px;
+float:left;
+}
+#login_pad_bottom  label {
+padding-left:22px;
+height:19px;
+line-height:20px;
+cursor:pointer;
+float:left;
+}
+#login_pad_bottom  .chklabel {
+background:url(../img/btn_Option_S.png) no-repeat 0 center;
+}
+#login_pad_bottom  .unchklabel {
+background:url(../img/btn_Option_n.png) no-repeat 0 center;
+}
+#change_pwd {
+display:block;
+float:right;
+color:#000;
+margin:1px 2px 0 0;
+}
+
+#handled
+{
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+#Login
+{
+    width:290px;
+    height:45px;
+    overflow:hidden;
+    margin:10px auto;
+}
+
+
+#login_pad_done {
+/*background:url(../img/login.png) no-repeat 0 center; */
+width:290px;
+height:45px;
+font-size:14px;
+text-align:center;
+}
+
+
+#SpeedUp {
+    display:block;
+    background:url(../img/login.png) no-repeat 0 center;
+    width:290px;
+    height:45px;
+    margin:5px 0 0 15px;
+    color:green;
+    font-size:14px;
+    font-weight:700;
+    border:none;
+    display: none;
+}
+#SpeedUp:hover {
+background-position: -290px center;
+}
+#SpeedUp:active {
+background-position: -580px center;
+}
+
+#loginout_pad_done {
+    width:290px;
+    height:45px;
+    margin:5px 0 0 15px;
+    font-size:14px;
+}
+#login_pad_done:hover {
+background-position: -290px center;
+}
+#login_pad_done:active {
+background-position: -580px center;
+}
+
+#Logining
+{
+    display:none;
+    background:url(../img/Logining.gif) no-repeat 0 center;
+    width:290px;
+    height:45px;
+    border:none;    
+}   
+
+#login_pad_button {
+margin-top:100px;
+background:url(../img/passport.png) no-repeat 0 center;
+}
+#login_pad_button:hover {
+background-position: -123px center;
+}
+#login_pad_button:active {
+background-position: -246px center;
+}
+.login_button {
+margin-left:8px;
+cursor:pointer;
+width:123px;
+height:32px;
+border:none;
+}
+#notice {
+position:absolute;
+left:0px;
+top:515px;
+width:320px;
+height:30px;
+line-height:30px;
+background:url(../img/notice.png) no-repeat 6px center;
+}
+#notice marquee {
+float:left;
+margin: 1px 1px 1px 36px;
+}
+.notice_item {
+display:block;
+overflow:hidden;
+white-space:nowrap;
+text-overflow:ellipsis;
+width:218px;
+color:#fff;
+}
+#notice_more {
+display:none;
+float:right;
+margin:3px 6px 0 0;
+width:50px;
+color:#f0de53;
+font-size:13px;
+font-weight:700;
+text-decoration:none;
+}
+
+.rightLoading
+{
+    width:100px;
+    height:100px;
+    margin:80px 0 0 110px;
+    background-position:0 center;
+}
+
+.wrongLoading
+{
+    width:74px;
+    height:61px;
+    margin:70px 0 0 123px;
+}
+
+
+#login_tips
+{
+    text-align:center;
+    margin:20px 0 0 10px;   
+    width:300px;
+    height:70px;
+    color:#25a52c
+}
+
+#login_fail_button
+{
+   width:320px;
+   height:100px; 
+   display:none;
+}
+ 
+#NetCheckRefresh
+{
+  background:url(../img/NetCheckRefresh.png) 0 center no-repeat;
+  width:60px;
+  height:60px;  
+  float:left;
+  margin-left:35px;
+  margin-top:0px;
+}
+
+#NetCheckRefresh:hover
+{
+  background:url(../img/NetCheckRefresh.png) -60px center no-repeat;
+
+}
+
+#NetCheckRefresh:active
+{
+  background:url(../img/NetCheckRefresh.png) -120px center no-repeat;
+}
+
+
+#NetCheckHelp
+{
+  background:url(../img/NetCheckHelp.png) 0 center no-repeat;
+  width:60px;
+  height:60px;  
+  float:left;
+  margin-left:35px;
+  margin-top:0px;
+}
+
+#NetCheckHelp:hover
+{
+  background:url(../img/NetCheckHelp.png) -60px center no-repeat;
+
+}
+
+#NetCheckHelp:active
+{
+  background:url(../img/NetCheckHelp.png) -120px center no-repeat;
+}
+
+
+#NetCheckTool
+{
+  background:url(../img/NetCheckTool.png) 0 center no-repeat;
+  width:60px;
+  height:60px;  
+  float:left;
+  margin-left:35px;
+  margin-top:0px;
+}
+
+#NetCheckTool:hover
+{
+  background:url(../img/NetCheckTool.png) -60px center no-repeat;
+
+}
+
+#NetCheckTool:active
+{
+  background:url(../img/NetCheckTool.png) -120px center no-repeat;
+}
+
+
+
+
+
+
+.login_net_state
+{
+    background:url(../img/net_connect.png) 0 center no-repeat;  
+    background-position:0px center;
+    width:320px;
+    height:40px;
+}
+
+.login_account_state
+{
+    background:url(../img/net_account.png) 0 center no-repeat;  
+    background-position:0px center;
+    width:320px;
+    height:40px;
+    background-color: White;
+}
+
+#net
+{
+    width:160px;
+    height:35px;
+    color:White; 
+    float:left;
+    text-align:center;
+    line-height:35px;
+}
+
+#account
+{
+    width:160px;
+    height:35px;
+    color:White;   
+    float:right;
+    text-align:center;
+    line-height:35px;
+}
+
+#net_connect
+{
+    display:block;
+}
+
+#net_account
+{
+    display:none;    
+}
+
+#net_state
+{
+    width:auto;
+    height:30px;    
+    overflow:hidden;
+    margin:10px 0 0 0;
+}
+
+#net_state_icon
+{
+    background:url(../img/netStateIcon.png) 0 center no-repeat;
+    width:18px;
+    height:16px;  
+    float:left;  
+    margin: 5px 0 0 10px;   
+}
+
+#net_state_name
+{
+    width:90px;
+    height:16px;  
+    float:left; 
+    margin:5px 0 0 5px;    
+}
+
+#net_state_desc
+{
+    width:100px;
+    height:16px;
+    line-height:16px;
+    float:right;    
+    text-align:right;
+    margin:5px 10px 0 0;     
+}
+
+
+.division
+{
+    background:url(../img/division.png) 0 center no-repeat;
+    margin-left: 10px;
+    width:320px;
+    height:1px;      
+}
+
+
+.time_icon
+{
+    background:url(../img/time.png) 0 center no-repeat;
+    width:27px;
+    height:27px;       
+    float:left;
+    margin:7px 0 0 0;
+    color:White;
+    text-align:center;
+    line-height:27px;
+    
+}
+
+.time_desc
+{
+    width:15px;
+    height:27px;       
+    float:left;
+    line-height:27px;    
+    text-align:center; 
+    margin:7px 0 0 0; 
+}
+
+#net_time
+{
+    width:auto;
+    height:40px;    
+    overflow:hidden;
+}
+
+#net_time_icon
+{
+    background:url(../img/netTime.png) 0 center no-repeat;
+    width:18px;
+    height:21px;       
+    float:left;
+    margin:10px 0 0 10px;   
+}
+
+#net_time_name
+{
+    width:80px;
+    height:20px; 
+    line-height:20px;
+    margin:10px 0 0 5px;      
+    float:left;
+}
+
+#net_time_desc
+{
+    width:130px;
+    height:40px;
+    float:right;  
+    margin:0px 5px 0px 0px;  
+}
+
+#net_speedrate
+{    
+    width:auto;
+    height:50px;    
+    overflow:hidden; 
+}
+
+#net_speed_icon
+{
+    background:url(../img/sulvIcon.png) 0 center no-repeat;
+    width:17px;
+    height:17px;       
+    float:left; 
+    margin:10px 0 0 10px;
+}
+
+#net_speed_name
+{
+    width:80px;
+    height:17px; 
+    line-height:17px;   
+    margin:10px 0 0 5px;   
+    float:left;
+}
+
+#net_speed_desc
+{
+    width:70px;
+    height:50px; 
+    margin-right:10px;
+    float:right;
+}
+
+#up_speed
+{
+    width:70px;
+    height:20px;     
+}
+
+#up_speed_icon
+{
+    background:url(../img/upload.png) 0 center no-repeat;
+    width:6px;
+    height:8px;  
+    float:left;  
+    margin:6px 0 0 0;   
+}
+
+#up_speed_desc
+{
+    width:50px;
+    height:20px; 
+    line-height:20px;
+    margin:0 0 0 3px;
+    float:left;
+    
+}
+
+#down_speed
+{
+    width:70px;
+    height:20px;        
+}
+
+#down_speed_icon
+{
+    background:url(../img/download.png) 0 center no-repeat;
+   width:6px;
+    height:8px;  
+    float:left;  
+    margin:6px 0 0 0;      
+}
+
+#down_speed_desc
+{
+    width:50px;
+    height:20px; 
+    line-height:20px;
+    margin:0 0 0 3px;
+    float:left;
+}
+
+#net_speed_up
+{
+    background:url(../img/speedp.png) no-repeat;
+    width:26px;
+    height:50px;   
+    margin-top: 6px;
+    margin-right: 5px;
+    display: none;
+    float:right;
+}
+
+
+#disconnect
+{
+    background:url(../img/disconnectbtn.png) 0 center no-repeat;
+    width:268px;
+    height:44px;   
+    margin:45px 0 0 16px;  
+    border:none;
+}
+
+#disconnect:hover
+{
+    background-position:-268px center;    
+}
+
+#disconnect:active
+{
+    background-position:-536px center;    
+}
+
+#market_ad
+{
+    width:320px;
+    height:110px;
+    margin-top:10px;
+}
+
+#AccountInfo
+{
+    width:auto;
+    height:340px;
+    display:none;
+    background-color: White: 
+}
+
+#net_account_info
+{
+    width:320px;
+    height:241px;
+}
+
+#loading_account
+{
+    width:100px;
+    height:100px;
+    background-position:center;
+    margin:100px 0 0 100px;
+}
+
+#adDiv
+{
+    margin: 0px 0px 0px 0px;
+}
+
+#ShowOrHidePwd
+{
+	width:18px;
+	height:10px;
+	border:none;
+	margin-left:5px;
+	margin-top:12px;
+	cursor:pointer;
+	float:left;
+}
+
+.ShowPwd
+{
+	background:url(../img/showpwd.png) no-repeat;	
+}
+
+.HidePwd
+{
+	background:url(../img/hidepwd.png) no-repeat;		
+}
+
+#default_message
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color:white;
+
+}
+
+#notice_item
+{
+    outline:none;
+}
+
+#adDivBefore
+{
+    display: none;
+    margin: 60px 0px 0px 0px;
+}

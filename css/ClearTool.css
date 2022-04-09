@@ -1,0 +1,374 @@
+body 
+{
+	width:361px;
+	height:196px;
+	font-family:"Microsoft YaHei";
+    background:url(../img/ClearToolBg.png) no-repeat -10px -10px;
+	font-size:12px;
+	color:#333333;
+	overflow:hidden;
+}
+
+#menuitem
+{
+	width:343px;
+	height:30px;
+}
+
+
+#logo
+{
+	background: url(../img/SLogo.png) no-repeat 0 center;
+    float:left;
+    height:30px;
+    line-height:30px;
+    margin:0 0 0 8px;
+    width:124px;
+    color:white;
+    text-align: center;
+}
+
+#CearToolClose 
+{
+	background:url(../img/close.png) no-repeat 0 center;
+	float:right;
+	margin:8px 8px 3px 6px;
+	width:15px;
+	height:15px;
+	border:none;
+	cursor:pointer;
+}
+
+#CearToolClose:hover {
+	background-position:-15px center;
+}
+
+#CearToolClose:active {
+	background-position:-30px center;
+}
+
+#content
+{
+    width:343px;
+    height:145px;
+}
+
+#stateone
+{
+	width:343px;
+    height:90px;
+    display:block;
+    overflow:hidden;
+}
+
+#statetwo
+{
+	width:343px;
+    height:90px;
+    display:none;
+    overflow:hidden;
+}
+
+#uninstalltips
+{
+	width:300px;
+	margin:30px 0 0 20px;	
+}
+
+
+#tips
+{
+    width:300px;
+    height:40px;
+    line-height:15px;
+    margin: 10px 0 0 20px;
+}
+
+#progess
+{
+    background:url(../img/ClearToolProgressBk.png) no-repeat 0 center;
+    width:310px;
+    height:15px;
+    margin:0 0 0 20px;
+    -moz-border-radius:20px;  
+    -webkit-border-radius:20px;  
+    border-radius:20px;
+}
+
+#progessbar
+{
+     background:url(../img/ClearToolProgressFt.png) no-repeat 0 center;
+     height:15px;
+     width:310px;
+     display:block;
+     -moz-border-radius:20px;  
+    -webkit-border-radius:20px; 
+    border-radius:20px;
+}
+
+#displayname
+{
+    width:300px;
+    height:30px;
+    line-height:30px;
+    margin: 0 0 0 20px;
+
+}
+
+#ButtonStyle
+{
+	overflow:hidden;
+	width:361px;
+	height:35px;
+	margin:10px 0 0 10px;
+}
+
+#ButtonStyleOne
+{
+	width:361px;
+	height:35px;
+	display:none;		
+}
+
+#FirstButton
+{
+	background:url(../img/ClearToolBtn.png) no-repeat;
+	width:70px;
+	height:35px;
+	float:left;
+	margin-left:240px;
+	color:#24a52c;
+	font-size:12px;
+    font-weight:bold;
+	border:none;
+}	
+
+#FirstButton:hover
+{
+	background-position:-70px center;
+}
+
+#FirstButton:active
+{
+	background-position:-140px center;
+}
+
+#ButtonStyleTwo
+{
+	width:361px;
+	height:35px;	
+	display:none;	
+}
+
+#SecondButton
+{
+	background:url(../img/ClearToolBtn.png) no-repeat;
+	width:70px;
+	height:35px;
+	float:left;
+	margin-left:240px;
+	color:#24a52c;
+	font-size:12px;
+	font-weight:bold;
+	border:none;
+}	
+
+#SecondButton:hover
+{
+	background-position:-70px center;
+}
+
+#SecondButton:active
+{
+	background-position:-140px center;
+}
+
+#ButtonStyleThree
+{
+	width:361px;
+	height:35px;	
+	display:none;	
+}
+
+#ThirdButton
+{
+	background:url(../img/ClearToolBtn.png) no-repeat;
+	width:70px;
+	height:35px;
+	float:left;
+	margin-left:240px;
+	color:#24a52c;
+	font-size:12px;
+	font-weight:bold;
+	border:none;
+}	
+
+#ThirdButton:hover
+{
+	background-position:-70px center;
+}
+
+#ThirdButton:active
+{
+	background-position:-140px center;
+}
+
+#ButtonStyleFour
+{
+	width:361px;
+	height:35px;	
+	display:none;	
+}
+
+#FourthButton
+{
+	background:url(../img/ClearToolBtn.png) no-repeat;
+	width:70px;
+	height:35px;
+	float:left;
+	margin-left:240px;
+	color:#24a52c;
+	font-size:12px;
+	font-weight:bold;
+	border:none;
+}	
+
+#FourthButton:hover
+{
+	background-position:-70px center;
+}
+
+#FourthButton:active
+{
+	background-position:-140px center;
+}
+
+#ButtonStyleFive
+{
+	width:361px;
+	height:35px;	
+	display:none;	
+}
+
+#FifthButton
+{
+	background:url(../img/ClearToolBtn.png) no-repeat;
+	width:70px;
+	height:35px;
+	float:left;
+	margin-left:135px;
+	color:#24a52c;
+	font-size:12px;
+	font-weight:bold;
+	line-height:35px;
+	border:none;
+}	
+
+#FifthButton:hover
+{
+	background-position:-70px center;
+}
+
+#FifthButton:active
+{
+	background-position:-140px center;
+}
+
+
+#SixthButton
+{
+	background:url(../img/BigBtn.png) no-repeat;
+	width:100px;
+	height:35px;
+	float:left;
+	margin-left:5px;
+	color:#24a52c;
+	font-size:12px;
+    font-weight:bold;
+	text-decoration:none;
+	border:none;
+	line-height:35px;
+	
+}	
+
+#SixthButton:hover
+{
+	background-position:-100px center;
+}
+
+#SixthButton:active
+{
+	background-position:-200px center;
+}
+
+
+#ButtonStyleSix
+{
+	width:361px;
+	height:35px;	
+	display:block;	
+}
+
+#SeventhButton
+{
+	width:70px;
+	height:35px;
+	float:left;
+	margin-left:95px;
+	color:green;
+	font-size:12px;
+	font-weight:bold;
+	line-height:35px;
+	text-decoration:underline;
+	background-color:#F2FCFF;
+	border:none;
+}	
+
+
+#EighthButton
+{
+	background:url(../img/ClearToolBtn.png) no-repeat;
+	width:70px;
+	height:35px;
+	float:left;
+	margin-left:5px;
+	color:#24a52c;
+	font-size:12px;
+    font-weight:bold;	
+	line-height:35px;
+	border:none;
+}	
+
+#EighthButton:hover
+{
+	background-position:-70px center;
+}
+
+#EighthButton:active
+{
+	background-position:-140px center;
+}
+
+#NinthButton
+{
+	background:url(../img/ClearToolBtn.png) no-repeat;
+	width:70px;
+	height:35px;
+	float:left;
+	margin-left:5px;
+	color:#24a52c;
+	font-size:12px;
+	font-weight:bold;
+	line-height:35px;
+	border:none;
+}	
+
+#NinthButton:hover
+{
+	background-position:-70px center;
+}
+
+#NinthButton:active
+{
+	background-position:-140px center;
+}

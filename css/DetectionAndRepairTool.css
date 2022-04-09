@@ -1,0 +1,243 @@
+﻿body 
+{   
+    background:url(../img/RepairToolBg.png) no-repeat -5px -5px;    
+    background-color:White;
+	font-family:"Microsoft YaHei",微软雅黑;
+	font-size:13px;
+    width:448px;
+    height:477px;  
+    overflow:hidden;
+}
+
+#ToolBG
+{
+   width:440px;
+   height:128px;
+  
+}
+
+#ToolTittle
+{
+    width:440px;
+    height:30px;    
+}
+
+#ToolText
+{
+    background:url(../img/SLogo.png) 0 center no-repeat;
+    text-align:center;
+    font-size:15px;
+    width:140px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    margin-left:8px;
+    color:White;    
+    float:left;    
+}
+
+#ToolMin,#ToolClose
+{
+    float:right;
+    cursor:pointer;     
+}
+
+#ToolClose
+{
+margin-right:6px;
+}
+
+
+#ToolInterface
+{
+    width:440px;
+    height:98px;      
+}
+
+#ToolLogo
+{
+    background:url(../img/RepairToolIcon.png) 0 center no-repeat;
+    width:50px;
+    height:87px; 
+    float:left; 
+    margin-left:15px;       
+}
+
+#ToolOption
+{
+    width:340px;
+    height:87px; 
+    float:left;
+    margin-left:15px; 
+}
+
+#ToolTips
+{
+    width:300px;
+    height:27px;
+    color:White;    
+}
+
+#ProgressBarBg
+{
+    background:url(../img/ProgressBk.png) 0 center no-repeat;
+    width:340px;
+    height:10px; 
+}
+
+
+#ProgressBar
+{
+    display:block;
+    background:url(../img/ProgressFt.png) 0 center no-repeat;
+    height:10px; 
+    width:0%;
+}
+
+#CheckButton
+{
+    background:url(../img/Check_Btn.png) 0 center no-repeat;
+    width:88px;
+    height:32px;
+    border:none;
+    color:Green;
+    margin-top: 15px;
+    float:right;
+}
+
+#CheckButton:hover
+{
+    background:url(../img/Check_Btn.png) -88px center no-repeat;
+}
+
+#CheckButton:active
+{
+    background:url(../img/Check_Btn.png) -176px center no-repeat;
+}
+
+#ToolItem
+{
+    width:440px;
+    height:343px;
+    overflow:auto;
+}
+
+.ConcreteCheckProject
+{
+    width:420px;
+    height:49px;
+    overflow:hidden;     
+    margin-top:0px;
+}
+
+.Check_Pre
+{
+    background:url(../img/check_pre.png) 0 center no-repeat;   
+    width:25px;
+    height:48px;
+    float:left;
+    margin-left:15px;
+}
+
+.Check_Tested
+{
+    background:url(../img/check_tested.png) 0 center no-repeat;   
+    width:25px;
+    height:48px;
+    float:left;
+    margin-left:10px;
+}
+
+.Check_TestError
+{
+    background:url(../img/check_testerr.png) 0 center no-repeat;   
+    width:25px;
+    height:48px;
+    float:left;
+    margin-left:10px;
+}
+
+.Check_Testing
+{
+    background:url(../img/check_testing.png) 0 center no-repeat;   
+    width:25px;
+    height:48px;
+    float:left;
+    margin-left:10px;
+}
+
+.Check_Reparing
+{
+    background:url(../img/checkRepairing.png) 0 center no-repeat;   
+    width:25px;
+    height:48px;
+    float:left;  
+    margin-left:10px;  
+}
+
+.ConcreteCheckTips
+{
+    width:300px;
+    height:48px;
+    float:left;    
+    margin-left:10px;
+}
+
+.ConcreteCheckItem
+{
+    width:250px;
+    height:20px;   
+    line-height:20px;
+    text-align:left;
+    margin-left:5px;
+    margin-top:5px;   
+}
+
+.ConcreteErrorDesc
+{
+    color:Gray;
+    width:300px;
+    height:20px;   
+    line-height:20px;
+    text-align:left; 
+    margin-left:5px; 
+}
+
+.CheckPreResult
+{
+    color:Gray;
+    text-align:center;
+    width:48px;
+    height:48px;
+    line-height:48px;  
+    float:right;  
+    margin-right:15px;
+}
+
+.CheckingResult
+{
+    color:Red;
+    text-align:center;
+    width:48px;
+    height:48px;
+    line-height:48px; 
+    float:left;    
+}
+
+.CheckedResult
+{
+    color:Green;
+    text-align:center;
+    width:48px;
+    height:48px;
+    line-height:48px; 
+    float:left;    
+}
+
+.division
+{
+    background:url(../img/LongDivision.png); 
+    width:418px;
+    height:1px;   
+    float:left;
+}

@@ -1,0 +1,118 @@
+﻿body {
+background:#65bf6a;
+width:220px;
+height:220px;
+color:#fff;
+overflow:hidden;
+}
+.weather_line {
+border-bottom:solid 1px #d9d9d9;
+margin:0 10px 0 0px;
+}
+#weather_title {
+height:26px;
+font-size:16px;
+font-weight:700;
+margin-top:12px;
+}
+#weather_date {
+float:left;
+font-size: 11px;
+}
+#weather_brief {
+float:right;
+text-align:right;
+}
+#weather_view {
+height:50px;
+}
+#weather_image {
+display:block;
+width:45px;
+height:45px;
+float:left;
+margin-left:10px;
+}
+#weather_temp {
+float:right;
+font-size:30px;
+margin:2px 3px;
+}
+#weather_detail {
+float:left;
+margin:5px 0px 0px 10px;
+font-size:12px;
+line-height:20px;
+}
+#weather_days {
+height:90px;
+}
+#weather_days div {
+width:63px;
+float:left;
+margin-top:4px;
+text-align:center;
+}
+#weather_days h3 {
+display:block;
+font-size:12px;
+font-weight:700;
+margin:0;
+}
+#weather_days img {
+height:45px;
+width:45px;
+margin:0;
+}
+#weather_days p {
+font-size:12px;
+margin:0;
+}
+#weather_bottom {
+border:none;
+}
+#weather_bottom a {
+color:#fff;
+font-size:13px;
+display:block;
+margin-top:6px;
+}
+#weather_refresh 
+{
+    display:none;
+    float:left;
+    text-decoration:underline;
+    margin-top:5px;
+    cursor:pointer;
+}
+#weather_setting {
+    float:left;
+    margin-left:12px;
+    text-decoration:underline;
+    margin-top:5px;
+    cursor:pointer;
+}
+#weather_more {
+    float:right;
+    text-decoration:underline;
+    margin-top:5px;
+    cursor:pointer;
+}
+#weather_nd1_title{
+	font-size: 10px;
+}
+#weather_nd2_title{
+	font-size: 10px;
+}
+#weather_nd3_title{
+	font-size: 10px;
+}
+
+#WeatherTwo,#WeatherThree
+{
+    margin-left: 10px;
+}
+
+
+
+

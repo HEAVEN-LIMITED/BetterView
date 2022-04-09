@@ -1,0 +1,423 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*以上为ul控件的初始化,否则ul的控件前会有缩进*/
+
+body{
+	background-size: 100% 100%; 
+    width:648px;
+	height: 480px;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    border-radius:4px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    font-family:"Microsoft YaHei",微软雅黑;
+}
+
+#windows_top{
+    height: 70px;
+    width:100%;
+    background-image: url(../img/img_top_bg.png);
+    background-repeat: no-repeat;
+}
+
+.LogoClass{
+    float: left;
+    margin:15px 0px 0px 32px;
+}
+
+.titleClass{
+    width:200px;
+    color: #fff;
+    padding-top: 15px;
+    margin-left: 10px;
+    font-size: 16px;
+    float:left;
+}
+
+#MainWnd_Close 
+{
+    margin:8px 10px 3px 6px;
+}
+
+#MainWnd_Min {
+    margin:8px 2px 3px 6px;
+}
+
+/*******聊天窗口******/
+.wechat{
+    width:648px;
+    height:410px;
+    background-color: #f5f5f5;
+    border:1px solid #dddddd;
+}
+
+.windows_body{
+    width:648px;
+    height: 306px;
+    overflow-x:hidden; 
+    overflow-y:scroll; 
+    padding-bottom: 10px;
+}
+
+#seachMoreID{
+    color: #2196f3;
+    text-align: center;
+    cursor:pointer;
+    margin-top: 18px;
+    margin-bottom:7px;
+    font-size: 12px;
+    display: none;
+}
+
+.timeClass{
+    color: #999999;
+    text-align: center;
+    margin-top:14px;
+    font-size: 12px;
+}
+
+.windows_terminal{
+    height: 24px;
+    padding-right: 10px;
+}
+
+.terminal{
+    float:right;
+    margin-right:8px;
+    width:100px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color:#999999;
+    font-size: 12px;
+    background-image: url(../img/img_question_normal.png);
+}
+
+.terminal:hover{
+    color:#74cd4d;
+    width:120px;
+    background-image: url(../img/img_question_pressed.png);
+}
+
+.windows_terminal label{
+    float: right;
+    margin-top: 5px;
+    margin-right:10px;
+    color:#999999;
+    font-size: 12px;
+}
+
+.windows_input{
+	border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+	height: 68px;
+	width: 646px;
+    background-color: #fff;
+}
+
+.input_box{
+    border: 1px solid #dddddd;
+}
+
+.textClass{
+    width:68%;
+    height: 50px;
+	border: none;
+	outline: 0;
+	resize:none;
+	font-size: 14px;
+	line-height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #999999;
+    font-size: 14px;
+    float:left;
+    text-align: center;
+    overflow:hidden;
+}
+
+.writeCLass{
+    width:68%;
+    height: 50px;
+    border: none;
+    outline: 0;
+    resize:none;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #333333;
+    font-size: 14px;
+    float:left;
+    overflow:hidden;
+    text-align:left;
+}
+
+#send{
+	border:none;
+	background:#61ba3a;
+	color: #fff;
+	outline: 0;
+	height: 36px;
+    width:108px;
+	float: right;
+	margin-right:20px;
+    margin-top: 22px;
+}
+
+#send:hover{
+	background:#09bb07;
+	color: #fff;
+	border:none;
+}
+
+/*区分聊天*/
+
+.otherpng{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px; 
+}
+
+.rightSpan { 
+    float: right;
+    background: #fff;
+}
+
+.other{
+    margin-top: 14px;
+    padding-left: 20px;
+    clear: both;
+    width:70%;
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.other img {
+    float: left;
+}
+
+.rightSpan{
+    background: #fff;
+    padding:7px;
+    border-radius:4px;
+    float: left;
+    max-width:80%;
+    border: 1px solid #ededed;
+    font-size: 14px;
+    color:#333333;
+    line-height: 20px;  
+}
+
+.rightSpan img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*.other span:before{
+    content: " ";
+    position: absolute;
+    top: 9px;
+    right: 100%;
+    border: 6px solid transparent;
+    border-left-color: #fff;
+    right: inherit;
+    left: 100%;
+}*/
+
+/*other*/
+.leftpng{
+	float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px; 
+}
+
+.leftSpan { 
+    float: right;
+    background: #61ba3a;
+}
+
+.me{
+    margin-top: 14px;
+    padding-right: 25px;
+    clear: both;
+    width:80%;
+    display: block;
+    overflow: hidden;
+    margin-left: 100px;
+    font-size: 14px;
+}
+
+.leftSpan{
+    background: #61ba3a;
+    padding:7px;
+    border-radius:4px;
+    float: right;
+    max-width:80%;
+    border: 1px solid #ededed;
+    font-size: 14px;
+    color:#fff;
+    line-height: 20px;
+    word-wrap:break-word;
+}
+
+.leftSpan img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.me img {
+    float: right;
+}
+
+/*.me span:before{
+    content:"";
+    position: absolute;
+    top: 9px;
+    right: 100%;
+    border: 6px solid transparent;
+    border-right-color: #9eea6a;
+    right: inherit;
+    right: 100%;
+}*/
+
+#NumCountId{
+    width:30px;
+    height: 15px;
+    color: #999999;
+    float: left;
+    margin-top: 34px;
+    margin-right:5px;
+}
+
+.red{
+    color: #ff5252;
+}
+
+.blue{
+    color: #2196f3;
+}
+
+.rightBubble{
+    width:6px;
+    height: 11px;
+    background-image: url(../img/right_bubble.png);
+    background-repeat: no-repeat;
+    float: right;
+    margin:10px 10px 0px 0px;
+}
+
+.leftBubble{
+    width:5px;
+    height: 11px;
+    background-image: url(../img/left_bubble.png);
+    background-repeat: no-repeat;
+    float:left;
+    margin:10px 0px 0px 10px;
+}
+
+.indexClass{
+    color: #2196f3;
+    font-size: 14px;
+    width:100%;
+    display: block;
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+.pictureClass{
+    font-size: 14px;
+    width:100%;
+    height:34px;
+    display: block;
+}
+
+.aFail{
+    font-size: 14px;
+    width:20px;
+    height: 20px;
+    padding-top: 10px;
+    font-size: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+.aLoading{
+    color: #999999;
+    font-size: 14px;
+    width:15px;
+    height: 15px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

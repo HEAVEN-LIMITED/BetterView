@@ -1,0 +1,199 @@
+﻿body 
+{
+    background:url(../img/NetTerminalBg.png) no-repeat -5px -5px;
+    background-color:White;
+	height:477px;
+	width:448px;
+	font-family:"Microsoft YaHei",微软雅黑;
+	font-size:12px;
+	cursor:default;
+	overflow:hidden;
+}
+
+#NetTerminalBG
+{
+    width:440px;
+    height:128px;  
+}
+
+#SettingClose
+{
+	background:url(../img/close.png) no-repeat 0 center;
+	float:right;
+	margin-right:8px;
+	width:15px;
+	height:20px;
+	border:none;
+	cursor:hand;
+}
+
+#SettingClose:hover {
+background-position:-15px center;
+}
+
+#SettingClose:active {
+background-position:-30px center;
+}
+
+#SettingTittle
+{
+	width:440px;
+	height:30px;
+}
+
+#SettingText 
+{
+  background:url(../img/SLogo.png) 0 center no-repeat;
+  text-align:center;
+	float:left;
+  width:140px;
+	margin-left:12px;
+	color:White;
+	font-size:15px;
+	height:30px;
+	line-height:30px;
+}
+
+#NetTerminalLogo
+{
+    width:51px;
+    height:100px;
+    background:url(../img/NetTerminalLogo.png) 0 center no-repeat;
+    float:left;
+    margin-left:10px;    
+}
+
+#NetTerminalTips
+{
+    width:300px;
+    height:100px;
+    line-height:100px;
+    color:White;
+    float:left;  
+    margin: 0 0 0 10px;  
+}
+
+#Terminal
+{
+  height:300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ConcreteTerminal
+{
+    width:418px;
+    height:65px; 
+    margin-left:11px; 
+    margin-top:6px;  
+}
+
+.PCIcon
+{
+    background:url(../img/PCIcon.png) 0 center no-repeat;
+    width:40px;
+    height:60px; 
+    float:left;   
+}
+
+.PhoneIcon
+{
+    background:url(../img/PhoneIcon.png) 0 center no-repeat;
+    width:40px;
+    height:60px; 
+    float:left;   
+}
+
+.MachineTips
+{
+  width:250px;
+  height:60px;
+  float:left;      
+}
+
+.MachineName
+{
+   line-height:20px;
+   width:250px;
+   height:20px;    
+   margin-top:10px;
+   margin-left:10px;
+}
+
+.MachineMessage
+{
+   line-height:20px;
+   width:250px;
+   height:20px;    
+   margin-left:10px;
+}
+
+.offline
+{  
+   margin-top:14px;
+   width:88px;
+   height:32px;
+   background:url(../img/tipSure.png) 0 center no-repeat;  
+   float:right;
+   line-height:32px;
+   text-align:center;
+   margin-right:5px;
+}
+
+.offline:hover
+{
+   width:88px;
+   height:32px;
+   background:url(../img/tipSure.png) -88px center;  
+}
+
+.offline:active
+{
+   width:88px;
+   height:32px;
+   background:url(../img/tipSure.png) -176px center;  
+}
+
+.Local
+{
+   margin-top:14px;
+   width:88px;
+   height:32px;
+   color:Green;   
+   float:right;
+   line-height:32px;
+   text-align:center; 
+   margin-right:5px;
+}
+    
+.division
+{
+    background:url(../img/LongDivision.png) 0 center no-repeat;
+    width:418px;
+    height:1px;
+    float:left;
+}
+
+#TerminalTips
+{
+  width:440px;
+  height:30px;
+}
+
+#ConcreteTips
+{
+  height:30px;
+  float: left;
+  line-height: 30px;
+  margin-left: 55px;
+}
+
+#ChangePassword
+{
+  height:30px;
+  float:left;
+  line-height:30px;
+  text-decoration: underline;;
+  color:green;
+  cursor: pointer;
+}

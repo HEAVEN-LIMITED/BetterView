@@ -1,0 +1,34 @@
+body {
+font-family:'微软雅黑', '宋体', 'MS Sans Serif', 'Tahoma', 'Verdana', 'Arial';
+font-size:12px;
+padding:0px;
+margin:0px;
+}
+.cwec_close {
+background:url(../img/close.png) no-repeat 0 center;
+float:right;
+margin:8px 2px 3px 6px;
+width:15px;
+height:16px;
+}
+.cwec_close:hover {
+background-position:-15px center;
+}
+.cwec_close:active {
+background-position:-30px center;
+}
+.cwec_min {
+background:url(../img/min.png) no-repeat 0 center;
+float:right;
+margin:3px 0px 3px 6px;
+width:15px;
+height:15px;
+}
+.cwec_min:hover {
+background-position:-15px center;
+}
+.cwec_min:active {
+background-position:-30px center;
+}
+.cwec_caption {cursor:default; position: relative;}
+.clear {clear:both;display:block;height:0;visibility:hidden;}

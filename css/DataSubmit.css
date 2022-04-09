@@ -1,0 +1,115 @@
+﻿body 
+{
+	width:410px;
+	height:229px;
+	background:url(../img/dataSubmitBg.png) no-repeat -5px -5px;
+	font-family:"Microsoft YaHei",微软雅黑;
+	font-size:12px;
+	overflow:hidden;
+}
+
+::-ms-clear,::-ms-reveal
+{
+	display: none;
+}
+#datasubmit_tittle
+{
+    width:400px;
+	height:34px; 
+}
+
+#datasubmit_text
+{
+    background:url(../img/SLogo.png) 0 center no-repeat;
+    text-align:center;
+    width:115px;
+	height:34px; 
+	line-height:34px;
+	text-align:center;
+	color:White;  
+	float:left;
+    font-size: 15px;
+    margin-left: 12px;
+}
+
+#datasubmit_close
+{
+    margin:8px 5px 0 0;  
+    float:right;
+}
+
+#datasubmit
+{
+    width:400px;
+    height:179px;
+    overflow:hidden;   
+}
+
+#datasubmit_tips
+{
+    width:380px;
+    height:30px;
+    text-align:left;
+    line-height:15px;
+    margin:15px 0 0 8px;
+}
+
+ #inputblock
+    {
+        width:28px;
+        height:30px;
+        position: absolute;
+        background-color: white;
+        margin:17px 0 0 357px;
+        display:none;
+    }
+
+#datasubmit_account
+{
+    width:380px;
+    height:32px;
+    line-height:30px;
+    margin:15px 0 0 8px; 
+    border:none;   
+    font-family: "Microsoft YaHei";
+}
+
+.defaultTips
+{
+    color:Gray;
+}
+
+.inputTips
+{
+    color:Black;
+}
+
+#datasubmit_error
+{
+    width:393px;
+    height:15px; 
+    color:Red;
+    margin:15px 0 0 8px;
+    visibility:hidden;    
+}
+
+#datasubmit_submit
+{
+    background:url(../img/commonBtn.png) 0 center no-repeat;
+    width:129px;
+    height:44px;
+    margin:0 0 0 260px; 
+    text-align:center;
+    line-height:44px; 
+    color:Green;  
+}
+
+#submit:hover
+{
+    background:url(../img/commonBtn.png) -129px;
+}
+
+#submit:active
+{
+    background:url(../img/commonBtn.png) -258px;
+}

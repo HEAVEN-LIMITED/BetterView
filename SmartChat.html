@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=7" />
+	<meta name="cwefeatures" content="size:648 480,bgtype:grid" />
+	<title>智能客服</title>
+	<link href="css/comm.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="css/SmartChat.css" />
+	<script type="text/javascript" src="js/cwe-core.js"></script>
+	<script type="text/javascript" src="js/mootools-core-1.4-full.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/infoCenter.js"></script>
+	<script type="text/javascript" src="js/funCtrl.js"></script>
+	<script type="text/javascript" src="js/SmartChat.js"></script>
+</head>
+<body class="cwec_caption">
+<div class="cwec_caption" id="windows_top"  UNSELECTABLE="on">
+	<img class="LogoClass" src="img/img_top_head.png" UNSELECTABLE="on" />
+	<div class="titleClass" UNSELECTABLE="on">小Y同学<br><span style="font-size: 14px"  UNSELECTABLE="on">24小时实时自动问答</span></div>
+	<div id="MainWnd_Close" class="cwec_close" title="关闭" UNSELECTABLE="on"></div>
+    <div id="MainWnd_Min" class="cwec_min" title="最小化" href="#" UNSELECTABLE="on"></div>
+</div>
+
+<div class="wechat"  UNSELECTABLE="on">
+	<!--聊天内容-->
+	<div class="windows_body" id="windowsID"  UNSELECTABLE="on">
+		<div id="seachMoreID"  UNSELECTABLE="on"><u>查看更多消息</u></div>
+		<div class="content" id="chatbox"  UNSELECTABLE="on">
+			<!--<div class="timeClass">2018-12-18 14:00</div>
+
+			<div class="other"><img src="img/img_body_customer.png" title="客服"><div class="leftBubble"></div><div class="rightSpan">您好！我是天翼校园小姐姐，请问有什么能帮助您的吗？</div></div>
+			<div class="other"><img src="img/img_body_customer.png" title="客服"><div class="leftBubble"></div><div class="rightSpan">您好！我是天翼校园小姐姐，请问有什么能帮助您的吗fdsfsdfzsdfsdfszfszfdzsfzsdfvszdfs？</div></div>
+			<div class="me">
+				<img class="leftpng" src="img/img_body_me.png" title="我">
+				<div class="rightBubble" ></div>
+				<div class="leftSpan">hehe</div>
+				<img class="aLoading" src="img/msgloading.gif"></img>
+				<img class="aFail" src="img/msg_fail.png" title="点击重新发送"></img>
+			</div>
+			<div class="timeClass">2018-12-18 14:00</div>
+			<div class="other"><img src="img/img_body_customer.png" title="客服"><div class="leftBubble"></div><div class="rightSpan"><span>您好！我是天翼校园小姐姐，请问有什么能帮助您的吗？</span><laebl class="indexClass">Windows客户端</laebl><br/><laebl class="indexClass">MAC客户端</laebl><br/><laebl class="indexClass">IOS客户端</laebl><a class="indexClass" target="_blank" href="http://www.baidu.com">点我查看图片</a></div></div>
+			<div class="timeClass">2018-12-18 14:00</div>
+			<div class="other"><img src="img/img_body_customer.png" title="客服"><div class="leftBubble"></div><div class="rightSpan"><span>您好！我是天翼校园小姐姐，请问有什么能帮助您的吗？</span></div></div>
+			<div class="timeClass">2018-12-18 14:00</div>
+			<div class="other"><img class="otherpng" src="img/img_body_customer.png" title="客服"><div class="leftBubble"></div><div class="rightSpan">请连上校园网络，<img src="https://imgsa.baidu.com/exp/w=480/sign=273744a8cffc1e17fdbf8d397a91f67c/562c11dfa9ec8a1307b9a45ef703918fa1ecc0e9.jpg" width="262" height="200"/>打开客户端下载页面进行下载安装使用。</div></div>-->
+		</div>
+	</div>
+	<div class="windows_terminal"  UNSELECTABLE="on">
+		<div class="terminal" os="macOS"  UNSELECTABLE="on">macOS客户端</div>
+		<div class="terminal" os="android"  UNSELECTABLE="on">Android客户端</div>
+		<div class="terminal" os="ios"  UNSELECTABLE="on">IOS客户端</div>
+		<label>您还想咨询：</label>
+	</div>
+	<div class="windows_input" id="talkbox">
+		<div class="input_box">
+			<textarea class="textClass" maxlength="55" onchange="this.value=this.value.substring(0, 55)" onkeydown="this.value=this.value.substring(0, 55)" onkeyup="this.value=this.value.substring(0, 55)" id="input_box">请用一句话简洁描述您要咨询的问题，如：总是掉线怎么处理?</textarea>
+			<div id="NumCountId"><span class="red">0</span>/55</div>
+			<button id="send"  UNSELECTABLE="on">发 送</button>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

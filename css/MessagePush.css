@@ -1,0 +1,49 @@
+﻿body {
+	width:420px;
+	height:350px;
+	background-color:#74CD4D;
+	font-family:"Microsoft YaHei",微软雅黑;
+	font-size:12px;
+	overflow:hidden;
+}
+
+#MessagePushTittle
+{
+	width:420px;
+	height:25px;	
+}
+
+#MessagePushLogo
+{
+	float:left;
+	background:url(../img/logo.png) no-repeat 0 center;
+	width:23px;
+	height:25px;
+	margin-left:10px;
+}
+
+#MsgPushClose
+{
+	border:none;
+	cursor:pointer;
+	height:25px;
+	background-position:0 center;	
+	margin-right:3px;
+	width:15px;
+	height:15px;
+}
+
+#MessagePushText
+{
+	float:left;	
+	color:White;
+	line-height:25px;
+}
+
+#MsgPush
+{
+	height:315px;
+	width:410px;	
+	display:block;
+	margin-left:2px;
+}
