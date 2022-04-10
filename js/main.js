@@ -30,7 +30,7 @@ var mInfoBgIntevalTime = INFO_DEF_TIME;
 var mServerInfoLastDate = ''; //校园信息专区默认最新消息时间 zlm 2020.06.09
 var time = 5;
 var AutoLoginCountDown = undefined;
-var block = false;
+var block = true;
 
 function init() {
     App.currentView = 'login_checkstate';
@@ -161,6 +161,38 @@ function UIMsgReg() {
         var autologin = $('chk_auto_login').get('checked') ? '1': '0';
         $infoCenter.setConfigValue('Account.autologin', autologin, false,
         function() {});
+		if(block) {
+	
+		block = false;
+	
+		AutoLoginCountDown = setInterval(function() {
+                if (time <= 0) {
+                    $('AutoSignCountDown').set('text', '自动登录倒计时: 0');
+                    DoLoginPAP();
+                    $('AutoSignCountDown').set('text', '');
+
+					if(AutoLoginCountDown != undefined){
+						clearinterval(AutoLoginCountDown);
+						AutoLoginCountDown = undefined;
+					}
+                } else {
+                    if (!$('chk_auto_login').get('checked')
+						|| App.currentView == 'login_checkstate'
+						|| block
+						) {
+						
+						 time = 5;
+						$('AutoSignCountDown').set('text', '');
+						
+                        clearinterval(AutoLoginCountDown);
+                        return;
+                    }
+                    $('AutoSignCountDown').set('text', '自动登录倒计时: ' + time);
+                    time--;
+                }
+            },
+            1000);
+		}
     });
 
     $('login_pad_done').addEvent('click', DoLoginPAP); //登录按钮
@@ -541,6 +573,7 @@ function handlePreConnectedMsg(svrMsgObj) {
 						
 						 time = 5;
 							
+						$('AutoSignCountDown').set('text', '');
                         clearinterval(AutoLoginCountDown);
                         return;
                     }
