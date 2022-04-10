@@ -538,6 +538,8 @@ function handlePreConnectedMsg(svrMsgObj) {
 						|| App.currentView == 'login_checkstate'
 						|| block
 						) {
+						
+						 time = 5;
 							
                         clearinterval(AutoLoginCountDown);
                         return;
