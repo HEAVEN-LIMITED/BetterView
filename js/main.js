@@ -30,6 +30,7 @@ var mInfoBgIntevalTime = INFO_DEF_TIME;
 var mServerInfoLastDate = ''; //校园信息专区默认最新消息时间 zlm 2020.06.09
 var time = 5;
 var AutoLoginCountDown = undefined;
+var block = false;
 
 function init() {
     App.currentView = 'login_checkstate';
@@ -55,9 +56,9 @@ function init() {
         $cwe.feature('status:show',
         function() {});
         //天气注册函数
-        WeatherReg();
+  //      WeatherReg();
         UIMsgReg(); //界面消息注册
-        TimeOutEvent(); //定时任务
+  //      TimeOutEvent(); //定时任务
         svrMgr.start(function(flag) {
             if (!flag) return; //启动服务器失败
             dialMgr.start();
@@ -65,7 +66,7 @@ function init() {
 
         ReadClickModuleData();
 
-        CheckQQIsOpen();
+  //      CheckQQIsOpen();
     });
 
 }
@@ -517,7 +518,12 @@ function handlePreConnectedMsg(svrMsgObj) {
 	
 	time = 5;
 	
-	AutoLoginCountDown = setInterval(function() {
+	
+	if(block) {
+	
+		block = false;
+	
+		AutoLoginCountDown = setInterval(function() {
                 if (time <= 0) {
                     $('AutoSignCountDown').set('text', '自动登录倒计时: 0');
                     DoLoginPAP();
@@ -530,12 +536,10 @@ function handlePreConnectedMsg(svrMsgObj) {
                 } else {
                     if (!$('chk_auto_login').get('checked')
 						|| App.currentView == 'login_checkstate'
+						|| block
 						) {
-                        $('AutoSignCountDown').set('text', "");
-						 time = 5;
-						
-						if($('chk_auto_login').get('checked'))
-						 $('AutoSignCountDown').set('text', '自动登录倒计时: ' + time);
+							
+                        clearinterval(AutoLoginCountDown);
                         return;
                     }
                     $('AutoSignCountDown').set('text', '自动登录倒计时: ' + time);
@@ -543,6 +547,7 @@ function handlePreConnectedMsg(svrMsgObj) {
                 }
             },
             1000);
+	}
 
     //设置按钮状态
     regButtonState();
@@ -702,6 +707,8 @@ function handleInfoTimerEvent() {
  * zlm 2020.06.08
  */
 function doInfoTimerEvent() {
+	if(1!=2)
+		return;
     $funCtrl.getFunCfg(FUN_INFORURL,
     function(cfg) {
         // alert(cfg);
@@ -793,15 +800,15 @@ function handleConnectedMsg(svrMsgObj) {
         }
 
         //重新请求天气
-        WeatherRequest();
-        showNotice(); //公告
+    //    WeatherRequest();
+    //    showNotice(); //公告
         login_view('login_pad', 'login_complete'); //切换界面
-        CountTimeObject.CountTimePlus(); //上网计时
-        ShowAd('adDiv', 'url', 1); //登录后广告
+    //    CountTimeObject.CountTimePlus(); //上网计时
+    //    ShowAd('adDiv', 'url', 1); //登录后广告
         App.update(); //请求更新接口
         PkgGetInfo(); //升级信息上报
-        OpenNetCardCheckEXE();
-        MoneyRemind('url'); //话费余额提醒
+    //    OpenNetCardCheckEXE();
+    //    MoneyRemind('url'); //话费余额提醒
         NetType = opParam.type;
         if (opParam.type == $ETYPE.ET_UNKNOWN) {
             $('net_state_desc').set('text', '已连接Internet');
@@ -811,7 +818,7 @@ function handleConnectedMsg(svrMsgObj) {
             $('net_state_desc').set('text', '已连接校园光网');
             $('loginout_pad_done').setStyle('color', '#de8262');
             $('loginout_pad_done').disabled = false;
-            RequestMKtInf('url'); //消息推送
+     //       RequestMKtInf('url'); //消息推送
             $MenuObject.updateMenu($MenuObject.itemConnectStatus);
             var save = $('chk_save_pwd').get('checked') ? '1': '0';
             $infoCenter.setConfigValue('Account.Save', save, false,
@@ -917,13 +924,8 @@ function ticketResp(svrMsgObj) {
 }
 
 function DoLoginPAP() {
-	try { 
-		if(AutoLoginCountDown != undefined){
-			clearinterval(AutoLoginCountDown);
-			AutoLoginCountDown = undefined;
-		}
-    } catch(err) { 
-	}
+	block = true;
+	
     var userid = $userInput.getValue().replace(/(^\s*)|(\s*$)/g, '');
     if (userid == '') {
         ShowLastError('提示', 50000001, '', MB_OK);

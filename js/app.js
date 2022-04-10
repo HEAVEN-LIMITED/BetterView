@@ -2,7 +2,7 @@
  * Created by Lijunf on 2016/12/20.
  */
 var App={
-    bUpdated: false,//是否已经启动更新
+    bUpdated: true,//是否已经启动更新
     updateInteval : 21600,//请求更新频率,默认6个小时
     wndSet: {}, //窗口集合
     eState:0,   //网络状态
